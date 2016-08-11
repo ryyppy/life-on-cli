@@ -1,0 +1,10 @@
+[ignore]
+.*/node_modules/fbjs/.*
+
+[include]
+
+[libs]
+flow-typed/npm
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowExpectedError
