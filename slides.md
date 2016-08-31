@@ -7,44 +7,48 @@
 
 -> Yep. <-
 
-
 -------------------------------------------------
 
--> Unix Philosophy <-
+-> ZSH <-
 =========
 
+-> A better bash <-
 <br>
-\* As much plain text as possible 
-<br>
-\* Huge set of small tools
-<br>
-\* Each tool can do one thing well
-<br>
-\* stdin, stderr, stdout and retcode
-<br>
-\* I/O redirecting (\>) + Piping (|)
-<br>
-\* Node.js? \*hint\* \*hint\*
+-> *You probably use it already.* <-
 <br>
 
-
--> *Everything in Linux / BSD is built around that!* <-
+-> Ever wondered how input navigation works? <-
 <br>
--> *(and also f'ing old...)* <-
+-> Type *bindkey* for a list of shortcuts <-
+<br>
+
+##################################################
+
+Different Keybinding Modes:
+
+*Emacs-Mode (default)*   ->      bindkey -e
+*VI-Mode*                ->      bindkey -v
+
 
 -------------------------------------------------
-
--> Shell <-
+-> ZSH <-
 =========
 
-* *zsh*, bash, sh,...
-* Easy to centralize dotfiles (.zshrc, .tmux.conf, etc.)
-* Easy to build utility scripts / aliases ($PATH) 
-* Easy to adapt config for different Unix environments
-* Huge potential for customization! (colors, etc.)
-* We should know its history (a lot of hidden gems) 
+-> *Emacs Mode* <-
 
--> *BUT: text-only has its limitations* <-
+> Special (meta) key: *^[*  (or ESC)
+
+Begin of line             *^A*
+End of line               *^E*
+Word forward              *^[F*
+Word back                 *^[B*
+Delete word               *^[D*
+Previous command          *^[P*
+Next command              *^[N*
+
+Undo                      *^_*
+
+Clear Screen              *^L*
 
 -------------------------------------------------
 
@@ -113,3 +117,12 @@ Detach session       *prefix* + *D*
 - DEMO 1 - Simple Code Manipulation
 
 - DEMO 2 - *flow-vim-quickfix* integration 
+
+-------------------------------------------------
+
+-> Some Interesting Google Keywords <-
+
+* zle zsh 
+* bindkey
+* sed command
+* fzf zsh (fuzzy search)
