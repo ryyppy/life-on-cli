@@ -2,10 +2,159 @@
 %author: @ryyppy
 %date: 2016-08-11
 
--> CAN WE FINALLY SEE SOME ACTION? <-
+-> A LIFE ON A COMMANDLINE <-
 =========
 
--> Yep. <-
+
+-> *Introspection to a Keyboard-Driven Workflow* <- 
+
+
+
+
+
+
+
+             by Patrick Stapfer (@ryyppy)
+
+-------------------------------------------------
+
+-> The Beginning (2010 - 2011) <-
+=========
+
+How I used to work:
+
+<br>
+- IDEs (IntelliJ)
+- Notepad ++
+- TextMate -> Sublime
+
+- Other stuff
+  - PuTTy (SSH-Terminal)
+  - WinSCP (FTP-Client)
+  - File Explorer
+  - Browser,...
+  - etc.
+
+<br>
+-> *GUI Interaction & Mouse slowed me down* <-
+
+-------------------------------------------------
+
+-> The Challenge <-
+=========
+
+- Don't be dependent on a GUI
+- Learn to automate things efficiently
+- Get keyboard driven
+- Embrace the UNIX ways
+- Be efficient with text manipulation
+- Automated setup of my tools
+
+-------------------------------------------------
+
+-> The Tools <-
+=========
+
+<br>
+- US Keyboard Layout
+<br>
+- iTerm2
+  - tmux
+  - NeoVim
+<br>
+- OSX
+  - Alfred
+  - Chrome
+
+
+-------------------------------------------------
+
+-> tmux <-
+=========
+
+-> Terminal multiplexer <-
+
+<br>
+- Process running a server
+- Manages sessions & windows
+- Interaction via tmux client
+- Keeps running after terminal is closed
+
+<br>
+- Configured via ~/.tmux.conf
+- Hotkey-driven
+- Features command language
+
+-------------------------------------------------
+
+-> tmux <-
+=========
+
+-> Basic Usage (dependent on config!): <-
+
+> prefix hotkey   *^J* (CTRL J)  (default *^B*)
+
+Show help          *prefix* + *?*
+
+New window           *prefix* + *C*
+Horizontal pane      *prefix* + *-*
+Vertical pane        *prefix* + *|*
+Next pane            *prefix* + *J*
+Previous window      *prefix* + *L*
+Close pane | window  *prefix* + *X*
+
+Enter copy-mode      *prefix* + *\[*
+Paste buffer         *prefix* + *\]*
+
+Detach session       *prefix* + *D*
+
+-------------------------------------------------
+
+-> vim / nvim <-
+=========
+
+-> My Personal Tool of Software Craftmanship <-
+
+- Everything is plain text 
+- Editor should be an extension of my hands 
+- One tool for all editor needs
+- Easy to learn, hard to master
+
+-------------------------------------------------
+
+-> vim / nvim <-
+=========
+
+-> *DEMO TIME* <-
+
+-------------------------------------------------
+
+-> Wrap Up <-
+=========
+
+- *Hard* time to do the transition
+- Change has happen *at work*
+- It was *super fun* to learn new old stuff
+- Comfortable level of *abstraction*
+- Learned a lot about *CS history*
+
+-------------------------------------------------
+
+-> Appendix <-
+=========
+
+*My dotfiles (dev setup):*
+https://github.com/ryyppy/dotfiles
+
+*Link to this presentation:*
+https://github.com/ryyppy/life-on-cli
+
+-------------------------------------------------
+
+-> Encore Stuff <-
+=========
+
+More nerdiness in the next slides...
 
 -------------------------------------------------
 
@@ -52,77 +201,10 @@ Clear Screen              *^L*
 
 -------------------------------------------------
 
--> tmux <-
-=========
-
--> Terminal multiplexer <-
-
-* Server <--> Client architecture 
-
-* Manages *Sessions*
-  - Client connects to sessions
-  - ... can create Windows
-  - ... can create Panes
-
-* *Session* contains:
-  - Windows
-  - Panes (split views)
-  - Own copy buffer 
-
-* Configured via ~/.tmux.conf
-* Hotkey-driven
-* Features command language
-
--------------------------------------------------
-
--> tmux <-
-=========
-
--> Basic Usage (dependent on config!): <-
-
-> prefix hotkey   *^J* (CTRL J)  (default *^B*)
-
-Show help          *prefix* + *?*
-
-New window           *prefix* + *C*
-Horizontal pane      *prefix* + *-*
-Vertical pane        *prefix* + *|*
-Next pane            *prefix* + *J*
-Previous window      *prefix* + *L*
-Close pane | window  *prefix* + *X*
-
-Enter copy-mode      *prefix* + *\[*
-Paste buffer         *prefix* + *\]*
-
-Detach session       *prefix* + *D*
-
--------------------------------------------------
-
--> vim / nvim <-
-=========
-
--> My Personal Tool of Software Craftmanship <-
-
-- Source Code is plain text
-- Plain text needs to be manipulated
-- We should know *HOW* our tools transform our code
-- We should be *IN CONTROL* of our tools
-- Period. 
-
--------------------------------------------------
-
--> vim / nvim <-
-=========
-
-- DEMO 1 - Simple Code Manipulation
-
-- DEMO 2 - *flow-vim-quickfix* integration 
-
--------------------------------------------------
-
 -> Some Interesting Google Keywords <-
+=========
 
-* zle zsh 
-* bindkey
-* sed command
-* fzf zsh (fuzzy search)
+- zle zsh 
+- bindkey
+- sed command
+- fzf zsh (fuzzy search)
